@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Aggiungi un prodotto alla vendita - NegozioSportivo.it</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Sell - NegozioSportivo.it">
+        <meta name="author" content="Andrea Bellanti">
+        <meta name="keywords" content="SELL, ECOMMERCE, NEGOZIOSPORTIVO, SPORT, VENDI">
+    </head>
+    <body>
+        <h1>Vendi qualcosa su NegozioSportivo.it</h1>
+            <nav><a href="descrizione.html">Chi siamo</a> <a href="login.html">Login</a></nav>
+            <form action="venditore.html" method="post">
+            <div>
+                <label for="nomeoggetto">Nome dell' oggetto che vuoi vendere: </label>
+                <input type="text" name="oggetto" id="nomeoggetto" value="nome prodotto">
+            </div>
+            <div>
+                <label for="linkoggetto">Link dell' immagine dell' oggetto</label>
+                <textarea rows="10" cols="20" name="link" id="linkoggetto">Inserisci qui il link</textarea> <!--Ho messo una text area molto grande per contenere anche riferimenti a link molto lunghi-->
+            </div>
+            <div>
+                <label for="descrizioneprodotto">Descrizione del prodotto</label>
+                <textarea rows="15" cols="25" name="descrizione" id="descrizioneprodotto">Inserisci qui la descrizione del prodotto (max. 375 caratteri)</textarea>
+            </div>
+            <div>
+                <label for="prezzo">Prezzo:</label>
+                <input  type="number" name="prezzo" id="prezzo" value="0">
+            </div>
+            <div>
+                <label for="quantità">Quantità disponibili:</label>
+                <input  type="number" name="disponibili" id="quantità" value="0">
+            </div>
+               <input type="submit" value="Metti in vendita!">
+        </form>
+    </body>
+</html>
