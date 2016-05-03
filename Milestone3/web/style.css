@@ -1,0 +1,560 @@
+/* 
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+/*
+Regole generali per il documento
+*/
+body{
+    background-color: #EAF27C;
+    font-size: 16px;
+    font-family: "Open Sans", "Times New Roman", "Serif";
+    color: #832232;
+}
+
+/*
+Regole per i titoli principali
+*/
+h1{
+    color: #0B0033;
+    position: relative;
+    text-align: center;
+}
+
+/*
+Regole per i titoli secondari
+*/
+h2{
+    color: #0B0033;
+}
+
+/*
+Regole per i sottotitoli
+*/
+h3{
+    color: #0B0033;
+}
+/*
+Regole per i link
+*/
+a:visited, a:link{
+    color: #0B0033;
+}
+a:hover{
+    color: blueviolet;
+}
+/*
+Regole generali per i campi di input
+*/
+input, textarea{
+    color: lightgrey;
+}
+.focus:active{
+    background-color: blue;
+    border-color: red;
+}
+/*
+Regole generali per i bottoni
+*/
+.bottone{
+    background-color:#370031;
+    color: #EAF27C;
+}
+/*
+Regole per le liste puntate
+*/
+ul{
+    list-style-type: disk;
+    color: orangered;
+}
+/*
+Regole per le sottoliste puntate
+*/
+ul > ul{
+    list-style-type: circle;
+    color: orangered;
+}
+/*
+Regole generali per le sidebars
+*/
+.sidebarsx > ul, .sidebardx > ul{
+    list-style-type: none;
+}
+.sidebarsx > ul{
+    position: relative;
+    left: -2em;
+}
+/*
+Regole generali per la tabella
+*/
+tr > th{
+    font-weight: bold;
+    color: #EAF27C;
+    background-color: #370031;
+}
+
+tr:nth-child(even){
+    background-color: #CE8964;
+    color: #832232;
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    background-color: #832232;
+    color: #CE8964;
+    text-align: center;
+}
+/*#immaginegrande{
+    float: left;
+}*/
+.info{
+    display: block;
+}
+
+@media only screen and (min-width: 1200px){
+    /*
+    Regole layaut titoli
+    */
+    h1{
+        font-size: 3em;
+        font-weight: bold;
+    }
+    
+    h2{
+       font-size: 2em; 
+    }
+    
+    h3{
+        font-size: 1.5em;
+    }
+/*
+Regole per la sidebar
+*/
+.sidebardx{
+    float: right;
+    width: 150px;
+    height: 890px;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+.sidebarsx{
+    float: left;
+    width: 150px;
+    height: 890px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+/*
+Regole per il form di accesso
+*/
+#user{
+    position: relative;
+    left: 25%;
+    top: 80px;
+}
+
+#password{
+    position: relative;
+    left: 25%;
+    top: 110px;
+}
+
+#Psw{
+    position:relative;
+    left: 3px;
+}
+
+#pulsante{
+    position: relative;
+    left: 33%;
+    top: 130px; 
+    height: 30px;
+    width: 60px;
+}
+/*
+Regole per la barra di navigazione 
+la nascondo perché i collegamenti sono già presenti nella sidebar
+*/
+nav{
+    display: none;
+}
+/*
+Regole per la tabella
+*/
+table{
+    position: relative;
+    left: 14em;
+    border-collapse: separate;
+    width: 35em;
+}
+
+/*
+Regole per il form di vendita
+*/
+
+#etichettaoggetto{
+    position: relative;
+    top: -30%;
+    left: 15%;
+}
+
+#linkoggetto{
+    position: absolute;
+    top: 100%;
+    left: -45%;
+    width: 40em;
+}
+
+#etichettadescrizione{
+    position: absolute;
+    top: 500%;
+    left: 25%;
+}
+#descrizioneprodotto{
+    position: absolute;
+    top: 550%;
+    left: -45%;
+    width: 40em;
+    height: 5em;
+}
+#etichettaprezzo{
+    position:absolute;
+    top: 750%;
+}
+
+#prezzo{
+    position: absolute;
+    top: 750%;
+    left: 23%;
+}
+
+#etichettaquantità{
+    position: absolute;
+    top: 825%;
+}
+    
+#quantità{
+    position:absolute;
+    top: 825%;
+    left: 23%;
+}
+#button{
+    position: absolute;
+    top: 900%;
+    left: 35%; 
+    height: 30px;
+    width: 60px;
+}
+
+#vendita{
+    position: absolute;
+    left: 33%;
+}
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 480px){
+    /*
+    Regole layaut titoli
+    */
+    h1{
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    
+    h2{
+       font-size: 1.5em; 
+    }
+    
+    h3{
+        font-size: 1em;
+    }
+/*
+Regole per la sidebar
+*/
+.sidebardx{
+    float: right;
+    width: 0px;
+    height: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.sidebarsx{
+    float: left;
+    width: 100px;
+    height:999px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+.sidebarsxscritte{
+  position: absolute;
+  left:-2em;
+}
+/*
+Regole per il form di accesso
+*/
+#user{
+    position: relative;
+    left: 1em;
+    top: 5em;
+}
+
+#password{
+    position: relative;
+    left: 1em;
+    top: 5.5em;
+}
+
+#Psw{
+    position:relative;
+    left: 3px;
+}
+
+#pulsante{
+    position: relative;
+    left: 4.75em;
+    top: 7em; 
+    height: 30px;
+    width: 60px;
+}
+#titolo{
+    position:relative;
+    left: 5%;
+}
+/*
+Regole per la barra di navigazione 
+la nascondo perché i collegamenti sono già presenti nella sidebar
+*/
+nav{
+    display: none;
+}
+/*
+Regole per la tabella
+*/
+table{
+    position: absolute;
+    left: 20%;
+    top: 8em;
+    border-collapse: separate;
+    width: 60%;
+}
+
+/*
+Regole per il form di vendita
+*/
+
+#etichettaoggetto{
+    position: relative;
+    top: -30%;
+    left: 15%;
+}
+
+#linkoggetto{
+    position: absolute;
+    top: 100%;
+    left: -10%;
+    width: 25em;
+}
+
+#etichettadescrizione{
+    position: absolute;
+    top: 500%;
+    left: 25%;
+}
+#descrizioneprodotto{
+    position: absolute;
+    top: 550%;
+    left: -10%;
+    width: 25em;
+    height: 5em;
+}
+#etichettaprezzo{
+    position:absolute;
+    top: 750%;
+}
+
+#prezzo{
+    position: absolute;
+    top: 750%;
+    left: 23%;
+}
+
+#etichettaquantità{
+    position: absolute;
+    top: 825%;
+}
+    
+#quantità{
+    position:absolute;
+    top: 825%;
+    left: 23%;
+}
+#button{
+    position: absolute;
+    top: 900%;
+    left: 35%; 
+    height: 30px;
+    width: 60px;
+}
+
+#vendita{
+    position: absolute;
+    left: 33%;
+}
+}
+
+@media only screen and (max-width: 480px){
+    /*
+    Regole layaut titoli
+    */
+    h1{
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    
+    h2{
+       font-size: 1.5em; 
+    }
+    
+    h3{
+        font-size: 1em;
+    }
+/*
+Regole per la sidebar
+*/
+.sidebardx{
+    display:none;
+}
+
+.sidebarsx{
+    display: none;
+}
+.sidebarsxscritte{
+  display: none;
+}
+/*
+Regole per il form di accesso
+*/
+#user{
+    position: relative;
+    left: 1em;
+    top: 5em;
+}
+
+#password{
+    position: relative;
+    left: 1em;
+    top: 5.5em;
+}
+
+#Psw{
+    position:relative;
+    left: 3px;
+}
+
+#pulsante{
+    position: relative;
+    left: 8em;
+    top: 7em; 
+    height: 30px;
+    width: 60px;
+}
+#titolo{
+    position:relative;
+    left: 5%;
+}
+/*
+Regole per la barra di navigazione 
+la nascondo perché i collegamenti sono già presenti nella sidebar
+*/
+nav{
+    text-align: center;
+}
+nav > ul{
+    list-style-type: none;
+}
+/*
+Regole per la tabella
+*/
+table{
+    position: absolute;
+    left: 0%;
+    top: 35%;
+    border-collapse: separate;
+    /*width: 60%;*/
+}
+
+/*
+Regole per il form di vendita
+*/
+
+/*#etichettaoggetto{
+    position: relative;
+    top: -30%;
+    left: 15%;
+}*/
+
+#linkoggetto{
+    position: relative;
+    top: 100%;
+    left: -20%; /*-10*/
+    width: 25em;
+}
+
+#etichettadescrizione{
+    position: relative;
+    top: 500%;
+    left: 0%; /*25*/
+}
+#descrizioneprodotto{
+    position: relative;
+    top: 550%;
+    left: -20%; /*-10*/
+    width: 25em;
+    height: 5em;
+}
+#etichettaprezzo{
+    position:relative;
+    top: 750%;
+}
+
+#prezzo{
+    position: relative;
+    top: 750%;
+    width: 3em;
+}
+
+#etichettaquantità{
+    position: relative;
+    top: 825%;
+}
+    
+#quantità{
+    position:relative;
+    top: 825%;
+    width: 3em;
+    
+}
+#button{
+    position: relative;
+    top: 900%;
+    left: 20%; /*35*/
+    height: 30px;
+    width: 60px;
+}
+
+#vendita{
+    position: relative;
+    left:26%;
+}
+}
+
+
+/* 
+    Created on : 2-apr-2016, 12.43.57
+    Author     : Andrea
+*/
+
